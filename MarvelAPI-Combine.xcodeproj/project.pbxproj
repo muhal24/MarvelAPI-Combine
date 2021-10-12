@@ -14,6 +14,13 @@
 		9D0E26CB2715CA5E00D0E7CF /* MarvelAPI_CombineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0E26CA2715CA5E00D0E7CF /* MarvelAPI_CombineTests.swift */; };
 		9D0E26D52715CA5E00D0E7CF /* MarvelAPI_CombineUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0E26D42715CA5E00D0E7CF /* MarvelAPI_CombineUITests.swift */; };
 		9D0E26D72715CA5E00D0E7CF /* MarvelAPI_CombineUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0E26D62715CA5E00D0E7CF /* MarvelAPI_CombineUITestsLaunchTests.swift */; };
+		9D0E26E42715CAE900D0E7CF /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0E26E32715CAE900D0E7CF /* Api.swift */; };
+		9D0E26E62715CB2100D0E7CF /* CharacterResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0E26E52715CB2100D0E7CF /* CharacterResponseModel.swift */; };
+		9D0E26E82715CB7100D0E7CF /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0E26E72715CB7100D0E7CF /* DetailView.swift */; };
+		9D0E26EA2715CB9900D0E7CF /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0E26E92715CB9900D0E7CF /* ImageLoader.swift */; };
+		9D0E26EC2715CBBA00D0E7CF /* LoadableImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0E26EB2715CBBA00D0E7CF /* LoadableImage.swift */; };
+		9D0E26EE2715CBE200D0E7CF /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0E26ED2715CBE200D0E7CF /* ContentViewModel.swift */; };
+		9D0E26F02715CC0700D0E7CF /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0E26EF2715CC0700D0E7CF /* ActivityIndicator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +51,13 @@
 		9D0E26D02715CA5E00D0E7CF /* MarvelAPI-CombineUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MarvelAPI-CombineUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D0E26D42715CA5E00D0E7CF /* MarvelAPI_CombineUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelAPI_CombineUITests.swift; sourceTree = "<group>"; };
 		9D0E26D62715CA5E00D0E7CF /* MarvelAPI_CombineUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelAPI_CombineUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9D0E26E32715CAE900D0E7CF /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
+		9D0E26E52715CB2100D0E7CF /* CharacterResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterResponseModel.swift; sourceTree = "<group>"; };
+		9D0E26E72715CB7100D0E7CF /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		9D0E26E92715CB9900D0E7CF /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		9D0E26EB2715CBBA00D0E7CF /* LoadableImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadableImage.swift; sourceTree = "<group>"; };
+		9D0E26ED2715CBE200D0E7CF /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		9D0E26EF2715CC0700D0E7CF /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +108,10 @@
 		9D0E26B82715CA5C00D0E7CF /* MarvelAPI-Combine */ = {
 			isa = PBXGroup;
 			children = (
-				9D0E26B92715CA5C00D0E7CF /* MarvelAPI_CombineApp.swift */,
-				9D0E26BB2715CA5C00D0E7CF /* ContentView.swift */,
+				9D0E26F42715D0DA00D0E7CF /* ViewModel */,
+				9D0E26F32715CFE800D0E7CF /* Api */,
+				9D0E26F22715CFDF00D0E7CF /* View */,
+				9D0E26F12715CFD300D0E7CF /* Model */,
 				9D0E26BD2715CA5D00D0E7CF /* Assets.xcassets */,
 				9D0E26BF2715CA5D00D0E7CF /* Preview Content */,
 			);
@@ -125,6 +141,43 @@
 				9D0E26D62715CA5E00D0E7CF /* MarvelAPI_CombineUITestsLaunchTests.swift */,
 			);
 			path = "MarvelAPI-CombineUITests";
+			sourceTree = "<group>";
+		};
+		9D0E26F12715CFD300D0E7CF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9D0E26E52715CB2100D0E7CF /* CharacterResponseModel.swift */,
+				9D0E26ED2715CBE200D0E7CF /* ContentViewModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9D0E26F22715CFDF00D0E7CF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9D0E26EF2715CC0700D0E7CF /* ActivityIndicator.swift */,
+				9D0E26B92715CA5C00D0E7CF /* MarvelAPI_CombineApp.swift */,
+				9D0E26BB2715CA5C00D0E7CF /* ContentView.swift */,
+				9D0E26EB2715CBBA00D0E7CF /* LoadableImage.swift */,
+				9D0E26E72715CB7100D0E7CF /* DetailView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9D0E26F32715CFE800D0E7CF /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				9D0E26E32715CAE900D0E7CF /* Api.swift */,
+			);
+			path = Api;
+			sourceTree = "<group>";
+		};
+		9D0E26F42715D0DA00D0E7CF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				9D0E26E92715CB9900D0E7CF /* ImageLoader.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +310,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D0E26EE2715CBE200D0E7CF /* ContentViewModel.swift in Sources */,
+				9D0E26E62715CB2100D0E7CF /* CharacterResponseModel.swift in Sources */,
+				9D0E26EC2715CBBA00D0E7CF /* LoadableImage.swift in Sources */,
+				9D0E26E42715CAE900D0E7CF /* Api.swift in Sources */,
+				9D0E26EA2715CB9900D0E7CF /* ImageLoader.swift in Sources */,
 				9D0E26BC2715CA5C00D0E7CF /* ContentView.swift in Sources */,
+				9D0E26E82715CB7100D0E7CF /* DetailView.swift in Sources */,
+				9D0E26F02715CC0700D0E7CF /* ActivityIndicator.swift in Sources */,
 				9D0E26BA2715CA5C00D0E7CF /* MarvelAPI_CombineApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
